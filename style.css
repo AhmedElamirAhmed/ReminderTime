@@ -1,0 +1,590 @@
+/*بسم الله الرحمن الرحيم*/
+
+/*
+rgba(255, 159, 243,.5);
+rgba(236, 240, 241,1.0);
+rgba(45, 52, 54,1.0);
+rgba(255, 159, 243,1.0);
+background-color:rgba(29, 209, 161,1.0);
+
+
+
+
+*/
+.door-right{
+    position: fixed;
+    width: 50%;
+    height: 880px;
+    top: 0;
+    right: 0;
+    background-color: rgba(113, 88, 226,1.0);
+    box-shadow: -5px -5px 5px rgba(113, 88, 226,1.0),
+                5px 5px 5px rgba(113, 88, 226,1.0),
+        inset -15px -15px 25px rgba(113, 88, 226,1.0),
+        inset 15px 15px 25px rgba(113, 88, 226,1.0);
+    transition: all 4s;
+    z-index: 1;
+    
+}
+.door-left{
+    position: fixed;
+    width: 50%;
+    height: 880px;
+    top: 0;
+    left: 0;
+    background-color: rgba(113, 88, 226,1.0);
+    box-shadow: -5px -5px 5px rgba(113, 88, 226,1.0),
+                5px 5px 5px rgba(113, 88, 226,1.0),
+        inset -15px -15px 25px rgba(113, 88, 226,1.0),
+        inset 15px 15px 25px rgba(113, 88, 226,1.0);
+    transition: all 4s;
+    z-index: 1;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(Images/2.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;    
+    }
+#main-header{
+    width: 80%;
+    height: 110px;
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px 40px 40px 40px;
+   /*background-color:rgba(236, 240, 241,.2);*/
+    background-color: rgba(207, 106, 135,0.6);
+    box-shadow: -3px 3px 5px #000,
+        3px -3px 5px #000;
+    text-align: center;
+}
+#first{
+    position: absolute;
+    left: 410px;
+    color: #EEE;
+    font-size: 44px;
+}
+#h1-second{
+    position: absolute;
+    left: 440px;
+    top: 75px;
+    color: #cc8e35;
+    font-size: 40px;
+    text-shadow: 2px 2px #000;
+}
+#main-header #right{
+    border-radius: 50px;
+    position: relative;
+    float: right;
+    top: 60px;
+    right: 50px;
+    box-shadow: 12px 12px 70px #EEE,
+                -12px -12px 70px #EEE;
+    border: 2px solid #EEE;
+}
+#main-header #left{
+    border-radius: 50px;
+    position: relative;
+    float: left;
+    top: 60px;
+    left: 50px;
+    box-shadow: 12px 12px 70px #EEE,
+                -12px -12px 70px #EEE;
+    border: 2px solid #EEE;
+}
+.contianer{
+    position: absolute;
+    background-color: rgba(236, 240, 241,0.4);;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 40px 40px;
+    z-index: -1;
+    box-shadow: -5px 5px 11px #000,
+                5px -5px 11px #000;
+    
+}
+div{
+    display: block;
+    height: 500px;
+    width: 96%;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: -3px 3px 5px #000,
+                3px -3px 5px #000;
+    border-radius: 40px 40px;
+    margin: 15px;
+    background-color: rgba(207, 106, 135,0.3);
+}
+.child{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 655px;
+    top: 40px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+    transition: all 3.0s;
+    opacity: 0.0;
+    
+}
+/* fist Div Dentist*/
+#dentist-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#dentist-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    position: relative;
+    bottom: 10px;
+    opacity: .5;
+}
+#dentist-div input{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 700px;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    box-shadow: -1px 1px 7px #000;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+/* SECOND div Engineer*/
+#engineer-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#engineer-div{
+    height: 550px;
+}
+#engineer-div h3{
+    margin-left: 10px;
+}
+#engineer-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+}
+#engineer-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    box-shadow: -1px 1px 7px #000;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Thierd div WaiterSuit*/
+#waiterSuit-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#waiterSuit-div{
+    height: 550px;
+}
+#waiterSuit-div h3{
+    margin-left: 220px;
+}
+#waiterSuit-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#waiterSuit-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    box-shadow: -1px 1px 7px #000;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+/* Fourth div Waitervest*/
+#waiterVest-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#waiterVest-div{
+    height: 550px;
+}
+#waiterVest-div h3{
+    margin-left: 220px;
+}
+#waiterVest-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#waiterVest-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    box-shadow: -1px 1px 7px #000;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+/* Fifth div Waitress*/
+#waitress-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#waitress-div{
+    height: 550px;
+}
+#waitress-div h3{
+    margin-left: 220px;
+}
+#waitress-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#waitress-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+/* Sixth div Tailor*/
+#tailor-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#tailor-div h3{
+    margin-left: 90px;
+    bottom: 40px;
+    position: relative
+}
+#tailor-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#tailor-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+/* siventh div Uniform*/
+#uniform-div{
+    height: 570px
+}
+#uniform-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#uniform-div h3{
+    margin-left: 40px;
+    bottom: 30px;
+    position: relative
+}
+#uniform-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#uniform-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+/* eight div sweatshirt*/
+#sweatshirt-div{
+    height: 570px
+}
+#sweatshirt-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#sweatshirt-div h3{
+    margin-left: 40px;
+    bottom: 30px;
+    position: relative
+}
+#sweatshirt-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#sweatshirt-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+/* nine div sweater*/
+#sweater-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#sweater-div h3{
+    margin-left: 200px;
+    bottom: 40px;
+    position: relative
+}
+#sweater-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#sweater-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+/* Ten div boot*/
+#boot-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#boot-div h3{
+    margin-left: 200px;
+    bottom: 40px;
+    position: relative
+}
+#boot-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#boot-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+/* eleven div lawyer*/
+#lawyer-main-img{
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 15px #000;
+}
+#lawyer-div h3{
+    margin-left: 410px;
+    bottom: 110px;
+    position: relative
+}
+#lawyer-div span{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #EEE;
+    text-shadow: 2px 2px #000;
+    opacity: .5;
+
+}
+#lawyer-div input{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 97%;
+    font-size: 40px;
+    background-color: rgba(236, 240, 241,0.4);
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #DDD;
+    border-radius: 20px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+
+/*----FOOTER-----*/
+
+
+footer{
+
+    width: 98%;
+    height: 200px;
+    margin-left: .7%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    position: relative;
+    bottom: -6050px;
+    background-color: rgba(236, 240, 241,0.2);
+    border: 5px solid #EEE;
+    border-radius: 20px;
+    box-shadow: -5px -5px 15px rgba(0,0,0,1.1),
+                5px 5px 15px rgba(0,0,0,1.1),
+        inset -35px -35px 45px rgba(207, 106, 135,0.5),
+        inset 35px 35px 45px rgba(207, 106, 135,0.5);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
